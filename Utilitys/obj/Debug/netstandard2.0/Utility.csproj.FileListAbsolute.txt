@@ -1,0 +1,8 @@
+C:\Users\vzan\source\repos\WebApi\Utilitys\bin\Debug\netstandard2.0\Utility.deps.json
+C:\Users\vzan\source\repos\WebApi\Utilitys\bin\Debug\netstandard2.0\Utility.dll
+C:\Users\vzan\source\repos\WebApi\Utilitys\bin\Debug\netstandard2.0\Utility.pdb
+C:\Users\vzan\source\repos\WebApi\Utilitys\obj\Debug\netstandard2.0\Utility.csprojAssemblyReference.cache
+C:\Users\vzan\source\repos\WebApi\Utilitys\obj\Debug\netstandard2.0\Utility.AssemblyInfoInputs.cache
+C:\Users\vzan\source\repos\WebApi\Utilitys\obj\Debug\netstandard2.0\Utility.AssemblyInfo.cs
+C:\Users\vzan\source\repos\WebApi\Utilitys\obj\Debug\netstandard2.0\Utility.dll
+C:\Users\vzan\source\repos\WebApi\Utilitys\obj\Debug\netstandard2.0\Utility.pdb
