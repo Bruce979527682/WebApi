@@ -9,14 +9,13 @@ namespace Utility
     public class ConfigHelper
     {
         public static IConfiguration Configuration { get; set; }
-        public static IHostingEnvironment HostingEnvironment { get; set; }
 
         static ConfigHelper()
         {
             Configuration = new ConfigurationBuilder()
                 .AddInMemoryCollection()
                 .AddJsonFile($"appsettings.json", optional: true, reloadOnChange: true)
-                .Build();            
+                .Build();
         }
 
         public static string GetValue(string key)
