@@ -4,14 +4,14 @@
     "C:\\Users\\vzan\\source\\repos\\WebApi\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vzan\\source\\repos\\WebApi\\Utilitys\\Utility.csproj": {
+    "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utilitys\\Utility.csproj",
+        "projectUniqueName": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj",
         "projectName": "Utility",
-        "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utilitys\\Utility.csproj",
+        "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj",
         "packagesPath": "C:\\Users\\vzan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utilitys\\obj\\",
+        "outputPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +41,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "JWT": {
+              "target": "Package",
+              "version": "[5.3.1, )"
+            },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -54,6 +58,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
             }
           },
           "imports": [
@@ -96,8 +104,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\vzan\\source\\repos\\WebApi\\Utilitys\\Utility.csproj": {
-                "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utilitys\\Utility.csproj"
+              "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj": {
+                "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj"
               }
             }
           }

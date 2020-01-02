@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Utility;
+using WebApi.Authorizations;
 
 namespace WebApi.Controllers
 {    
@@ -11,21 +14,24 @@ namespace WebApi.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
+        // GET api/values        
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            var token = JwtHelper.CreateToken(123456);
+            HttpContext.Response.Cookies.Append(ConfigHelper.GetValue("CookieName"), token, new CookieOptions() { IsEssential = true });
             return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
+        [Authorize]
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
             return "value";
         }
 
-        [Authorize]
+        [LoginAuthorize]
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)

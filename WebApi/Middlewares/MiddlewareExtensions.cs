@@ -8,10 +8,10 @@ namespace WebApi.Middlewares
 {
     public static class MiddlewareExtensions
     {
-        public static IApplicationBuilder UseJwtCustomerAuthorizeMiddleware(
+        public static IApplicationBuilder UseJwtAuthenticationMiddleware(
         this IApplicationBuilder builder)
         {
-            return builder.UseMiddleware<JwtCustomerAuthorizeMiddleware>();
+            return builder.UseMiddleware<JwtAuthenticationMiddleware>();
         }
     }
 }
