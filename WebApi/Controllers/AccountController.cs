@@ -6,7 +6,7 @@ using Utility;
 namespace WebApi.Controllers
 {
     public class AccountController : Controller
-    {        
+    {      
         private bool ValidateLogin(string userName, string password)
         {
             // For this sample, all logins are successful.
@@ -21,7 +21,7 @@ namespace WebApi.Controllers
             if (ValidateLogin(userName, password))
             {               
                 var token = JwtHelper.CreateToken(123456);
-                return Ok(new { code = 1, token });
+                return Ok(new { code = 1, type = "Bearer", token });//Authorization = type + ' ' + token;
             }
             return BadRequest(new { code = -1, msg = "获取Token失败！" });
         }

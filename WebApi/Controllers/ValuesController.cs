@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,37 +16,15 @@ namespace WebApi.Controllers
     public class ValuesController : ControllerBase
     {
         // GET api/values 
+        [Authorize]
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            var auth = HttpContext.Request;
             var token = JwtHelper.CreateToken(123456);
             HttpContext.Response.Cookies.Append(ConfigHelper.GetValue("CookieName"), token, new CookieOptions() { IsEssential = true });
             return new string[] { "value1", "value2" };
         }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        
     }
 }

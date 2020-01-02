@@ -32,19 +32,19 @@ namespace WebApi
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
             //添加jwt验证：
-            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            //    .AddJwtBearer(options =>
-            //    {
-            //        options.TokenValidationParameters = new TokenValidationParameters
-            //        {
-            //            ValidateIssuer = false,//是否验证Issuer
-            //            ValidateAudience = false,//是否验证Audience
-            //            ValidateLifetime = true,//是否验证失效时间
-            //            ClockSkew = TimeSpan.FromHours(2),
-            //            ValidateIssuerSigningKey = true,//是否验证SecurityKey                        
-            //            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(ConfigHelper.GetValue("SecurityKey")))
-            //        };
-            //    });
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = false,//是否验证Issuer
+                        ValidateAudience = false,//是否验证Audience
+                        ValidateLifetime = true,//是否验证失效时间
+                        ClockSkew = TimeSpan.FromHours(2),
+                        ValidateIssuerSigningKey = true,//是否验证SecurityKey                        
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(ConfigHelper.GetValue("SecurityKey")))
+                    };
+                });
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -73,7 +73,7 @@ namespace WebApi
             
             app.UseHttpsRedirection();
             app.UseCookiePolicy();
-            //app.UseAuthentication();            
+            app.UseAuthentication();            
             //app.UseSession();
             app.UseMvc();
             app.UseMvc(routes =>
