@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Entity.Interface;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using WebApi.Middlewares;
+using System;
+using System.Text;
+using Utility;
 
 namespace WebApi
 {
@@ -34,7 +30,30 @@ namespace WebApi
             {
                 options.CheckConsentNeeded = context => false;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
-            });            
+            });
+            //添加jwt验证：
+            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            //    .AddJwtBearer(options =>
+            //    {
+            //        options.TokenValidationParameters = new TokenValidationParameters
+            //        {
+            //            ValidateIssuer = false,//是否验证Issuer
+            //            ValidateAudience = false,//是否验证Audience
+            //            ValidateLifetime = true,//是否验证失效时间
+            //            ClockSkew = TimeSpan.FromHours(2),
+            //            ValidateIssuerSigningKey = true,//是否验证SecurityKey                        
+            //            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(ConfigHelper.GetValue("SecurityKey")))
+            //        };
+            //    });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowAnyOrigin()
+                    .AllowCredentials());
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -51,11 +70,21 @@ namespace WebApi
                 app.UseHsts();
             }
             //app.UseJwtAuthenticationMiddleware();
+            
             app.UseHttpsRedirection();
             app.UseCookiePolicy();
-            app.UseAuthentication();            
+            //app.UseAuthentication();            
             //app.UseSession();
             app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "Default",
+                    template: "{controller}/{action}/{id?}");
+                routes.MapRoute(
+                    name: "Default2",
+                    template: "{controller}/{action}");
+            });
         }
     }
 }

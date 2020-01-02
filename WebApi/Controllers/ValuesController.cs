@@ -14,7 +14,7 @@ namespace WebApi.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values        
+        // GET api/values 
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
@@ -24,14 +24,12 @@ namespace WebApi.Controllers
         }
 
         // GET api/values/5
-        [Authorize]
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
             return "value";
         }
 
-        [LoginAuthorize]
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)

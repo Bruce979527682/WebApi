@@ -17,3 +17,5 @@ C:\Users\vzan\source\repos\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.dll
 C:\Users\vzan\source\repos\WebApi\WebApi\obj\Debug\netcoreapp2.2\WebApi.pdb
 C:\Users\vzan\source\repos\WebApi\WebApi\bin\Debug\netcoreapp2.2\Utility.dll
 C:\Users\vzan\source\repos\WebApi\WebApi\bin\Debug\netcoreapp2.2\Utility.pdb
+C:\Users\vzan\source\repos\WebApi\WebApi\bin\Debug\netcoreapp2.2\Entity.dll
+C:\Users\vzan\source\repos\WebApi\WebApi\bin\Debug\netcoreapp2.2\Entity.pdb
