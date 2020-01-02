@@ -660,11 +660,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utilitys\\Utility.csproj",
+      "projectUniqueName": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj",
       "projectName": "Utility",
-      "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utilitys\\Utility.csproj",
+      "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj",
       "packagesPath": "C:\\Users\\vzan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utilitys\\obj\\",
+      "outputPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -710,10 +710,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
