@@ -1,0 +1,7 @@
+C:\Users\vzan\source\repos\WebApi\Entity\bin\Debug\netstandard2.0\Entity.Api.deps.json
+C:\Users\vzan\source\repos\WebApi\Entity\bin\Debug\netstandard2.0\Entity.Api.dll
+C:\Users\vzan\source\repos\WebApi\Entity\bin\Debug\netstandard2.0\Entity.Api.pdb
+C:\Users\vzan\source\repos\WebApi\Entity\obj\Debug\netstandard2.0\Entity.Api.AssemblyInfoInputs.cache
+C:\Users\vzan\source\repos\WebApi\Entity\obj\Debug\netstandard2.0\Entity.Api.AssemblyInfo.cs
+C:\Users\vzan\source\repos\WebApi\Entity\obj\Debug\netstandard2.0\Entity.Api.dll
+C:\Users\vzan\source\repos\WebApi\Entity\obj\Debug\netstandard2.0\Entity.Api.pdb

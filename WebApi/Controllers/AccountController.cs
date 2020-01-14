@@ -1,22 +1,41 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using BLL.Api;
+using Data.Api;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using Utility;
 
 namespace WebApi.Controllers
 {
     public class AccountController : Controller
-    {      
-        private bool ValidateLogin(string userName, string password)
+    {
+        public ApiContext _context;
+        public AccountController(ApiContext context)
         {
-            // For this sample, all logins are successful.
-            return true;
+            _context = context;
+        }
+
+        private bool ValidateLogin(string userName = "", string password = "")
+        {
+            var accounts = _context.Accounts.Where(x => x.UserName.Equals(userName));
+            if (accounts != null && accounts.Count() > 0)
+            {
+                foreach (var item in accounts)
+                {
+                    if (item.Password.Equals(password))
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
 
         [AllowAnonymous]
         [HttpPost]
-        public ActionResult OAuthLogin([FromBody] string userName, [FromBody] string password)
-        {
+        public ActionResult OAuthLogin([FromQuery] string userName = "", [FromQuery] string password = "")
+        {            
             // Normally Identity handles sign in, but you can do it directly
             if (ValidateLogin(userName, password))
             {               

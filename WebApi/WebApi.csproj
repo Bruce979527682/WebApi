@@ -18,7 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Entity\Entity.csproj" />
+    <ProjectReference Include="..\BLL.Api\BLL.Api.csproj" />
+    <ProjectReference Include="..\Entity\Entity.Api.csproj" />
     <ProjectReference Include="..\Utility\Utility.csproj" />
   </ItemGroup>
 

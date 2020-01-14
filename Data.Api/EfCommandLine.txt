@@ -1,0 +1,18 @@
+﻿-------程序包控制台-------
+
+添加命令：
+Add-Migration Init(自定义名称)
+
+移除命令：
+Remove-Migration
+
+更新数据库命令：
+Update-Database
+
+-----Powershell或cmd命令------
+
+添加命令：
+dotnet ef migrations add Init(自定义名称)
+
+更新数据库命令：
+dotnet ef database update

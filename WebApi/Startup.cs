@@ -1,10 +1,12 @@
-﻿using Entity.Interface;
+﻿using Data.Api;
+using Entity.Api.Interface;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -42,7 +44,7 @@ namespace WebApi
                         ValidateLifetime = true,//是否验证失效时间
                         ClockSkew = TimeSpan.FromHours(2),
                         ValidateIssuerSigningKey = true,//是否验证SecurityKey                        
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(ConfigHelper.GetValue("SecurityKey")))
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(ConfigHelper.GetValue("SecurityKey"))),                        
                     };
                 });
             services.AddCors(options =>
@@ -54,6 +56,7 @@ namespace WebApi
                     .AllowAnyOrigin()
                     .AllowCredentials());
             });
+            services.AddDbContext<ApiContext>(options => options.UseMySQL(ConfigHelper.GetConnectionValue("Default")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -75,7 +78,7 @@ namespace WebApi
             app.UseCookiePolicy();
             app.UseAuthentication();            
             //app.UseSession();
-            app.UseMvc();
+            //app.UseMvc();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

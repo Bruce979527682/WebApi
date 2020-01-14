@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BLL.Api;
+using Data.Api;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -14,15 +16,13 @@ namespace WebApi.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
-    {
+    {        
         // GET api/values 
         [Authorize]
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            var auth = HttpContext.Request;
-            var token = JwtHelper.CreateToken(123456);
-            HttpContext.Response.Cookies.Append(ConfigHelper.GetValue("CookieName"), token, new CookieOptions() { IsEssential = true });
+            var request = HttpContext.Request;            
             return new string[] { "value1", "value2" };
         }
         

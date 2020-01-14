@@ -1,0 +1,11 @@
+C:\Users\vzan\source\repos\WebApi\Data.Api\bin\Debug\netstandard2.0\Data.Api.deps.json
+C:\Users\vzan\source\repos\WebApi\Data.Api\bin\Debug\netstandard2.0\Data.Api.dll
+C:\Users\vzan\source\repos\WebApi\Data.Api\obj\Debug\netstandard2.0\Data.Api.csprojAssemblyReference.cache
+C:\Users\vzan\source\repos\WebApi\Data.Api\obj\Debug\netstandard2.0\Data.Api.AssemblyInfoInputs.cache
+C:\Users\vzan\source\repos\WebApi\Data.Api\obj\Debug\netstandard2.0\Data.Api.AssemblyInfo.cs
+C:\Users\vzan\source\repos\WebApi\Data.Api\bin\Debug\netstandard2.0\Data.Api.pdb
+C:\Users\vzan\source\repos\WebApi\Data.Api\bin\Debug\netstandard2.0\Entity.Api.dll
+C:\Users\vzan\source\repos\WebApi\Data.Api\bin\Debug\netstandard2.0\Entity.Api.pdb
+C:\Users\vzan\source\repos\WebApi\Data.Api\obj\Debug\netstandard2.0\Data.Api.csproj.CopyComplete
+C:\Users\vzan\source\repos\WebApi\Data.Api\obj\Debug\netstandard2.0\Data.Api.dll
+C:\Users\vzan\source\repos\WebApi\Data.Api\obj\Debug\netstandard2.0\Data.Api.pdb

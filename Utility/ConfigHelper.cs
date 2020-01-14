@@ -1,8 +1,4 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Utility
 {
@@ -21,6 +17,12 @@ namespace Utility
         public static string GetValue(string key)
         {
             return Configuration[key];
+        }
+
+
+        public static string GetConnectionValue(string key)
+        {
+            return Configuration.GetConnectionString(key);
         }
     }
 }

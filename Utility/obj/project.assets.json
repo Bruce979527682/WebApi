@@ -912,16 +912,6 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
-      },
-      "Entity/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Entity.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Entity.dll": {}
-        }
       }
     }
   },
@@ -3482,16 +3472,10 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
-    },
-    "Entity/1.0.0": {
-      "type": "project",
-      "path": "../Entity/Entity.csproj",
-      "msbuildProject": "../Entity/Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Entity >= 1.0.0",
       "JWT >= 5.3.1",
       "Microsoft.AspNetCore.Http >= 2.2.2",
       "Microsoft.Extensions.Configuration.Json >= 2.2.0",
@@ -3529,11 +3513,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

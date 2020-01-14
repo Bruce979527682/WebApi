@@ -14,6 +14,3 @@ C:\Users\vzan\source\repos\WebApi\Utility\obj\Debug\netstandard2.0\Utility.Assem
 C:\Users\vzan\source\repos\WebApi\Utility\obj\Debug\netstandard2.0\Utility.AssemblyInfo.cs
 C:\Users\vzan\source\repos\WebApi\Utility\obj\Debug\netstandard2.0\Utility.dll
 C:\Users\vzan\source\repos\WebApi\Utility\obj\Debug\netstandard2.0\Utility.pdb
-C:\Users\vzan\source\repos\WebApi\Utility\bin\Debug\netstandard2.0\Entity.dll
-C:\Users\vzan\source\repos\WebApi\Utility\bin\Debug\netstandard2.0\Entity.pdb
-C:\Users\vzan\source\repos\WebApi\Utility\obj\Debug\netstandard2.0\Utility.csproj.CopyComplete
