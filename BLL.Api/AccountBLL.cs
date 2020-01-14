@@ -1,4 +1,5 @@
 ﻿using Data.Api;
+using Entity.Api;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,10 +10,11 @@ namespace BLL.Api
 {
     public class AccountBLL
     {
-        public ApiContext _context;
-        public AccountBLL(ApiContext context)
-        {
-            _context = context;
-        }
+        //public List<Account> GetStudentList(int id)
+        //{
+        //    var db = SqlSugarHelper.GetInstance();
+        //    var list = db.Queryable<Account>().ToList();//Search
+        //    return list;
+        //}
     }
 }
