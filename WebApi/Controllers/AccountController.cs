@@ -18,6 +18,7 @@ namespace WebApi.Controllers
 
         private bool ValidateLogin(string userName = "", string password = "")
         {
+            var account = AccountBLL.SingleModel.GetModel(1);
             var accounts = _context.Accounts.Where(x => x.UserName.Equals(userName));
             if (accounts != null && accounts.Count() > 0)
             {
