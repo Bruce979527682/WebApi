@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SqlSugar;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -6,6 +7,7 @@ namespace Entity.Api
 {
     public class Account
     {
+        [SugarColumn(IsPrimaryKey = true, IsIdentity = true)]
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]        
         public int Id { get; set; }

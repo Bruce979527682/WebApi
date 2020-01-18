@@ -50,6 +50,10 @@
             "System.ComponentModel.Annotations": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "sqlSugarCore": {
+              "target": "Package",
+              "version": "[5.0.0.11, )"
             }
           },
           "imports": [

@@ -24,7 +24,7 @@ namespace BLL.Api
 
         public virtual T GetModel(int id)
         {
-            var model = db.Queryable<T>().Where($"Id={id}").Single();
+            var model = db.Queryable<T>().InSingle(id);
             return model;
         }
 
@@ -46,9 +46,9 @@ namespace BLL.Api
             return list;
         }
 
-        public virtual List<T> GetList(string where, int pageIndex = 1, int pageSize = 10, object pars = null)
+        public virtual List<T> GetList(string where, ref int totalCount, int pageIndex = 1, int pageSize = 10, object pars = null)
         {
-            var list = db.Queryable<T>().Where(where, pars).ToPageList(pageIndex, pageSize);
+            var list = db.Queryable<T>().Where(where, pars).ToPageList(pageIndex, pageSize, ref totalCount);
             return list;
         }
 
