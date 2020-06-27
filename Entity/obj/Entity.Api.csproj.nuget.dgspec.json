@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj": {}
+    "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj": {
+    "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj",
+        "projectUniqueName": "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj",
         "projectName": "Entity.Api",
-        "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj",
+        "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj",
         "packagesPath": "C:\\Users\\vzan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

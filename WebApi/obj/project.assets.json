@@ -13905,11 +13905,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vzan\\source\\repos\\WebApi\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\vzan\\Documents\\WebApi\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\WebApi\\WebApi.csproj",
+      "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\vzan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\WebApi\\obj\\",
+      "outputPath": "C:\\Users\\vzan\\Documents\\WebApi\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13928,14 +13928,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\vzan\\source\\repos\\WebApi\\BLL.Api\\BLL.Api.csproj": {
-              "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\BLL.Api\\BLL.Api.csproj"
+            "C:\\Users\\vzan\\Documents\\WebApi\\BLL.Api\\BLL.Api.csproj": {
+              "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\BLL.Api\\BLL.Api.csproj"
             },
-            "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj": {
-              "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj"
+            "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj": {
+              "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj"
             },
-            "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj": {
-              "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj"
+            "C:\\Users\\vzan\\Documents\\WebApi\\Utility\\Utility.csproj": {
+              "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\Utility\\Utility.csproj"
             }
           }
         }

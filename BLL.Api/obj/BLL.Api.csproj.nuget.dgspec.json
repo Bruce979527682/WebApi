@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vzan\\source\\repos\\WebApi\\BLL.Api\\BLL.Api.csproj": {}
+    "C:\\Users\\vzan\\Documents\\WebApi\\BLL.Api\\BLL.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vzan\\source\\repos\\WebApi\\BLL.Api\\BLL.Api.csproj": {
+    "C:\\Users\\vzan\\Documents\\WebApi\\BLL.Api\\BLL.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vzan\\source\\repos\\WebApi\\BLL.Api\\BLL.Api.csproj",
+        "projectUniqueName": "C:\\Users\\vzan\\Documents\\WebApi\\BLL.Api\\BLL.Api.csproj",
         "projectName": "BLL.Api",
-        "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\BLL.Api\\BLL.Api.csproj",
+        "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\BLL.Api\\BLL.Api.csproj",
         "packagesPath": "C:\\Users\\vzan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\BLL.Api\\obj\\",
+        "outputPath": "C:\\Users\\vzan\\Documents\\WebApi\\BLL.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +30,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\vzan\\source\\repos\\WebApi\\Data.Api\\Data.Api.csproj": {
-                "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Data.Api\\Data.Api.csproj"
+              "C:\\Users\\vzan\\Documents\\WebApi\\Data.Api\\Data.Api.csproj": {
+                "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\Data.Api\\Data.Api.csproj"
               },
-              "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj": {
-                "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj"
+              "C:\\Users\\vzan\\Documents\\WebApi\\Utility\\Utility.csproj": {
+                "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\Utility\\Utility.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "C:\\Users\\vzan\\source\\repos\\WebApi\\Data.Api\\Data.Api.csproj": {
+    "C:\\Users\\vzan\\Documents\\WebApi\\Data.Api\\Data.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vzan\\source\\repos\\WebApi\\Data.Api\\Data.Api.csproj",
+        "projectUniqueName": "C:\\Users\\vzan\\Documents\\WebApi\\Data.Api\\Data.Api.csproj",
         "projectName": "Data.Api",
-        "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Data.Api\\Data.Api.csproj",
+        "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\Data.Api\\Data.Api.csproj",
         "packagesPath": "C:\\Users\\vzan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Data.Api\\obj\\",
+        "outputPath": "C:\\Users\\vzan\\Documents\\WebApi\\Data.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -99,8 +99,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj": {
-                "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj"
+              "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj": {
+                "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj"
               }
             }
           }
@@ -139,14 +139,14 @@
         }
       }
     },
-    "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj": {
+    "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj",
+        "projectUniqueName": "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj",
         "projectName": "Entity.Api",
-        "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj",
+        "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj",
         "packagesPath": "C:\\Users\\vzan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -205,14 +205,14 @@
         }
       }
     },
-    "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj": {
+    "C:\\Users\\vzan\\Documents\\WebApi\\Utility\\Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj",
+        "projectUniqueName": "C:\\Users\\vzan\\Documents\\WebApi\\Utility\\Utility.csproj",
         "projectName": "Utility",
-        "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj",
+        "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\Utility\\Utility.csproj",
         "packagesPath": "C:\\Users\\vzan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\obj\\",
+        "outputPath": "C:\\Users\\vzan\\Documents\\WebApi\\Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

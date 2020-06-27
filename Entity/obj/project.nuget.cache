@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qowSnIoXjECLmu7skbfOIwg8HOTAoPCy2LH0/cl3bcDY2IbMgzujTL5y6RYBjJ3kneEL8H+80XAI60QHT04xfw==",
+  "dgSpecHash": "SdRD+d+Db7l0GseX005RAGHSFW2eBpH371DMgmUtkI3nUli7IpinHpHBSh7zHyY6aZ9eVOc90/HLvewb1Jrdzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj",
+  "projectFilePath": "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vzan\\.nuget\\packages\\google.protobuf\\3.5.1\\google.protobuf.3.5.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",

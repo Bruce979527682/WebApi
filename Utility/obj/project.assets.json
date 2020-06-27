@@ -3491,11 +3491,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj",
+      "projectUniqueName": "C:\\Users\\vzan\\Documents\\WebApi\\Utility\\Utility.csproj",
       "projectName": "Utility",
-      "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\Utility.csproj",
+      "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\Utility\\Utility.csproj",
       "packagesPath": "C:\\Users\\vzan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Utility\\obj\\",
+      "outputPath": "C:\\Users\\vzan\\Documents\\WebApi\\Utility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

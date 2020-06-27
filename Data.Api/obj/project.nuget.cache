@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/i9eS/VvA97Acoq3XwsUNUDlYkuwtuUigNN+x2jf7unjrZexIi1tubImTtDrmul5LzORqjcf5+2sbtoJ94ZH/g==",
+  "dgSpecHash": "W0zjeE20ETZ48TLryDXYFjUafRVabeKirJp00f+rhhD9WC+nQGNNTs8JYUdgveYGXyup2MPMmqg3/XBoe33d1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Data.Api\\Data.Api.csproj",
+  "projectFilePath": "C:\\Users\\vzan\\Documents\\WebApi\\Data.Api\\Data.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vzan\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\vzan\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",

@@ -6267,11 +6267,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vzan\\source\\repos\\WebApi\\Data.Api\\Data.Api.csproj",
+      "projectUniqueName": "C:\\Users\\vzan\\Documents\\WebApi\\Data.Api\\Data.Api.csproj",
       "projectName": "Data.Api",
-      "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Data.Api\\Data.Api.csproj",
+      "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\Data.Api\\Data.Api.csproj",
       "packagesPath": "C:\\Users\\vzan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Data.Api\\obj\\",
+      "outputPath": "C:\\Users\\vzan\\Documents\\WebApi\\Data.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6290,8 +6290,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj": {
-              "projectPath": "C:\\Users\\vzan\\source\\repos\\WebApi\\Entity\\Entity.Api.csproj"
+            "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj": {
+              "projectPath": "C:\\Users\\vzan\\Documents\\WebApi\\Entity\\Entity.Api.csproj"
             }
           }
         }
